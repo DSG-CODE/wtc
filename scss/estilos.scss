@@ -1,1 +1,32 @@
 @import "intro";
+
+$sec1:#004b8a;
+$sec2:#4267af;
+$sec3:#569fd2;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+//Estructura general
+.bg-wtc{
+    background: url("../img/backgroung-wtc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    .contenedor-inicial{
+        min-height: 65vh;
+        background: $sec1;
+    }
+
+    .contenedor-logo{
+        max-height: 15vh;
+    }
+}

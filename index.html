@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
 		<meta name="keywords" content=" Torre del World Trade Center Ciudad de México, Pepsi Center " />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon-wtc.png">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
@@ -21,9 +22,9 @@
 		</script>
 	</head>
 	<body class="demo-2">
-		<main>
 
-			<!-- Initial markup -->
+		<!-- Efecto Intro -->
+		<header>
 			<div class="segmenter" style="background-image: url(img/2.jpg)"></div>
 			<h2 class="trigger-headline trigger-headline--hidden"><span>W</span><span>T</span><span>C</span></h2>
 			<div class="bottom-nav">
@@ -32,7 +33,43 @@
 					<img src="img/ico-scroll.svg"  width="50px" alt="">
 				</div> -->
 			</div>
+		</header>
+		<!-- Termina efecto Intro -->
+
+		<!-- Contenido General -->
+		<main class="container-fluid p-0">
+			<!-- Inicio: WORLD TRADE CENTER CIUDAD DE MÉXICO  -->
+			<section class="row bg-wtc flex-column align-content-lg-end align-content-md-center justify-content-end">
+			<div class="col-lg-6 col-md-9 contenedor-logo d-flex justify-content-center align-content-end p-0">
+				<img src="img/logo-wtc.svg" class="img-fluid" width="400" alt="">
+			</div>
+			
+				<div class="col-lg-6 col-md-9 contenedor-inicial d-flex align-items-center p-0">
+					<div class="row justify-content-center">
+						<div class="col-8 text-center">
+							<img src="img/titulo.svg"  alt="">
+						</div>
+
+						<div class="col-7 tex d-flex flex-column align-items-center pt-5">
+							<p>El World Trade Center Ciudad de México
+								se ubica sobre la avenida Insurgentes
+								como un ícono, este rascacielos ha sido
+								referente como Centro de Negocios
+								Globales desde hace 25 años.
+							</p>
+							<p>Por sus valores y servicio de calidad, atrae
+							empresas de distintos rubros y alcances.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Termina Inicio: WORLD TRADE CENTER CIUDAD DE MÉXICO  -->
 		</main>
+		<!-- Termina Contenido general -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
 		<script src="js/anime.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/main.js"></script>
