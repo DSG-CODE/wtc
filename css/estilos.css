@@ -500,13 +500,6 @@ a:focus {
   -webkit-box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
           box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75); }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  background: #333;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 .bg-wtc {
   background: url("../img/backgroung-wtc.jpg");
   background-repeat: no-repeat;
@@ -519,5 +512,84 @@ body {
     background: #004b8a; }
   .bg-wtc .contenedor-logo {
     max-height: 15vh; }
+
+.video-fixed {
+  height: 100vh;
+  background: url("../img/fondo-video.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.mision-vision {
+  height: 100vh; }
+  .mision-vision .mision {
+    background: #4267af;
+    height: 50vh; }
+    .mision-vision .mision img {
+      max-width: 70%; }
+  .mision-vision .vision {
+    background: #569fd2;
+    height: 50vh; }
+    .mision-vision .vision img {
+      max-width: 40%; }
+
+.valores {
+  background: #004b8a;
+  height: 100vh; }
+  .valores img {
+    max-width: 400%; }
+
+.historia {
+  background-color: #4267af; }
+  .historia .vl1 {
+    border-left: 2px solid #fff;
+    height: 50px;
+    width: 2px;
+    margin-left: 30%; }
+  .historia .vl2 {
+    border-left: 2px solid #fff;
+    height: 50px;
+    width: 2px;
+    margin-left: 50%; }
+
+.esr {
+  background: #569fd2; }
+  .esr img {
+    max-width: 60%; }
+
+.torre-Ccomercial {
+  height: 100vh; }
+  .torre-Ccomercial .torre {
+    height: 50vh;
+    background: #004b8a; }
+    .torre-Ccomercial .torre img {
+      max-width: 60%; }
+  .torre-Ccomercial .centro-comercial {
+    height: 50vh;
+    background: #4267af; }
+
+.ciec {
+  background: #569fd2;
+  height: 100vh; }
+
+.estacionamiento {
+  background: #004b8a;
+  height: 100vh; }
+  .estacionamiento img {
+    max-width: 60%; }
+
+.contacto {
+  background: #4267af;
+  height: 100vh; }
+  .contacto i {
+    font-size: 30px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  body h2 {
+    font-weight: 600; }
 
 /*# sourceMappingURL=estilos.css.map */
