@@ -613,6 +613,12 @@ a:focus {
   .estacionamiento img {
     max-width: 60%; }
 
+.img-contacto {
+  height: 100vh;
+  background: url("../img/fondo-video.jpg");
+  background-size: cover;
+  background-position: center; }
+
 .contacto {
   background: #4267af;
   height: 100vh; }
