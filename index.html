@@ -27,6 +27,39 @@
 
 <body class="demo-2">
 
+		<!-- Menú -->
+		<div class="menu">
+			<nav class="d-flex flex-row  align-items-center py-3 shadow-lg">
+				<div class="d-flex align-items-center pl-4">
+					<img src="img/logo-wtc-menu.png" height="200px" alt="">
+				</div>
+				<ul class="fa-ul">
+					<li><a href="#inicio"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>INICIO</a></li>
+	
+					<li >
+						<a href="#" data-toggle="collapse" data-target="#menu-complejo" aria-expanded="false">
+							<span class="fa-li"><i class="fas fa-chevron-right"></i></span>COMPLEJO
+						</a>
+						<div class="collapse" id="menu-complejo">
+							<div class="my-3">
+								<ul class="fa-ul">
+									<li><a href="#torre"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Torre y Centro comercial</a></li>
+									<li><a href="#ciec"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Ciec y Pepsi Center</a></li>
+									<li><a href="#estacionamiento"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Estacionamiento</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+	
+					<li><a href="#"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>DIRECTORIO</a></li>
+					<li><a href="#"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>ESPACIOS</a> </li>
+					<li><a href="#contacto"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>CONTACTO </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Termina Menú -->
+
 	<!-- Efecto Intro -->
 	<header class="container-fluid">
 		<div class="row">
@@ -78,6 +111,7 @@
 			</div>
 		</section>
 		<!-- Termina Inicio: WORLD TRADE CENTER CIUDAD DE MÉXICO  -->
+
 
 		<!-- Sección Fixed -->
 		<div class="row">
@@ -281,7 +315,7 @@
 			<!-- Termina: Slide y Centro Comercial -->
 
 			<!-- Contenido de Torre y Centro Comercial -->
-			<div class="col-6">
+			<div class="col-6" id="torre">
 				<section class="container-fluid p-0 torre-Ccomercial">
 					<!-- Torre -->
 					<div class="row torre">
@@ -315,7 +349,7 @@
 		<!-- Termina: Torre y centro comercial -->
 
 		<!-- Ciec y Pepsi Center -->
-		<section class="row">
+		<section class="row" id="ciec">
 			<!-- Slide Ciec -->
 			<div class="col-6 slide-ciecPepsi p-0">
 				<div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel">
@@ -365,7 +399,7 @@
 		<!-- Termina: Ciec y Pepsi Center -->
 
 		<!-- Estacionamiento -->
-		<section class="row">
+		<section class="row" id="estacionamiento">
 			<!-- Img estacionamiento -->
 			<div class="col-6 img-estacionamiento">
 			</div>
@@ -440,21 +474,6 @@
 
 	</main>
 	<!-- Termina Contenido general main-->
-
-	<!-- Menú -->
-	<div class="menu">
-		<nav class="d-flex flex-column py-3">
-			<ul class="fa-ul">
-				<li><a href="#inicio"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>INICIO</a></li>
-				<li><a href="#complejo"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>COMPLEJO</a></li>
-				<li><a href="#"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>DIRECTORIO</a></li>
-				<li><a href="#"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>ESPACIOS</a> </li>
-				<li><a href="#contacto"><span class="fa-li"><i class="fas fa-chevron-right"></i></span>CONTACTO </a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<!-- Termina Menú -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>

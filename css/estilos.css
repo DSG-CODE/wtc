@@ -48,7 +48,7 @@ a {
 
 /* Demo colors */
 .demo-2 .trigger-headline {
-  color: #fbe094; }
+  color: #fff; }
 
 .demo-3 a {
   color: #b5b5b5; }
@@ -625,22 +625,27 @@ a:focus {
   .contacto i {
     font-size: 30px; }
 
-.general {
+main {
   position: relative; }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 20%;
   background: #004b8a;
   left: 0%;
-  top: 50%;
-  z-index: 100; }
+  top: 40%;
+  z-index: 10000; }
   .menu nav li {
     padding: 5px;
-    margin-left: 30px;
-    font-size: 18px; }
+    font-size: 13px; }
     .menu nav li a {
       text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   font-family: 'Poppins', sans-serif;
