@@ -582,6 +582,21 @@ a:focus {
     height: 50vh;
     background: #4267af; }
 
+.slide-ciecPepsi {
+  height: 100vh; }
+  .slide-ciecPepsi .slide {
+    height: 100%; }
+    .slide-ciecPepsi .slide .slide-ciec1 {
+      background: url("../img/pepsi-center.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; }
+    .slide-ciecPepsi .slide .slide-ciec2 {
+      background: url("../img/ciec.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; }
+
 .ciec {
   background: #569fd2;
   height: 100vh; }
