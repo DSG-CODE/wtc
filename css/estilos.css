@@ -556,6 +556,21 @@ a:focus {
   .esr img {
     max-width: 60%; }
 
+.slide-torre-Ccomercial {
+  height: 100vh; }
+  .slide-torre-Ccomercial .slide {
+    height: 100%; }
+    .slide-torre-Ccomercial .slide .slide-torre1 {
+      background: url("../img/centro-comercial.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; }
+    .slide-torre-Ccomercial .slide .slide-torre2 {
+      background: url("../img/backgroung-wtc.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; }
+
 .torre-Ccomercial {
   height: 100vh; }
   .torre-Ccomercial .torre {
@@ -582,6 +597,23 @@ a:focus {
   height: 100vh; }
   .contacto i {
     font-size: 30px; }
+
+.general {
+  position: relative; }
+
+.menu {
+  position: absolute;
+  width: 20%;
+  background: #004b8a;
+  left: 0%;
+  top: 50%;
+  z-index: 100; }
+  .menu nav li {
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 18px; }
+    .menu nav li a {
+      text-decoration: none; }
 
 body {
   font-family: 'Poppins', sans-serif;
