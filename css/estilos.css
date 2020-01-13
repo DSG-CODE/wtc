@@ -601,6 +601,12 @@ a:focus {
   background: #569fd2;
   height: 100vh; }
 
+.img-estacionamiento {
+  height: 100vh;
+  background: url("../img/estacionamiento.jpg");
+  background-size: cover;
+  background-position: center; }
+
 .estacionamiento {
   background: #004b8a;
   height: 100vh; }
