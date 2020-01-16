@@ -693,11 +693,39 @@ main {
   top: 40%;
   z-index: 10000; }
   .menu nav li {
-    padding: 5px;
-    font-size: 13px; }
+    padding: 3px;
+    font-size: 13px;
+    position: relative;
+    line-height: 1.8;
+    overflow: hidden; }
     .menu nav li a {
-      text-decoration: none; }
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      -webkit-transition: all .4s;
+      transition: all .4s; }
+      .menu nav li a:hover {
+        color: rgba(86, 159, 226, 0.753); }
+    .menu nav li:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+    .menu nav li:hover:before {
+      width: 100%; }
+    .menu nav li .activo {
+      color: rgba(86, 159, 226, 0.953);
+      font-weight: 600; }
 
+@media screen and (max-width: 1300px) {
+  .menu {
+    width: 25%; } }
 * {
   margin: 0;
   padding: 0;
@@ -712,5 +740,15 @@ body {
   -moz-osx-font-smoothing: grayscale; }
   body h2 {
     font-weight: 600; }
+
+.video-fixed {
+  height: 167.1vh;
+  margin: 0;
+  padding: 0;
+  background-position: 0;
+  background-size: cover; }
+
+.video-background {
+  width: 100%; }
 
 /*# sourceMappingURL=estilos.css.map */
