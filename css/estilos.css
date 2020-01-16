@@ -582,18 +582,24 @@ a:focus {
     background: #4267af;
     height: 50vh; }
     .mision-vision .mision img {
-      max-width: 70%; }
+      width: 70%; }
   .mision-vision .vision {
     background: #569fd2;
     height: 50vh; }
     .mision-vision .vision img {
-      max-width: 40%; }
+      width: 45%; }
+    .mision-vision .vision img.img-fade-vision {
+      opacity: 0.2;
+      width: 30%;
+      position: absolute;
+      margin-top: -10px;
+      right: 0; }
 
 .valores {
   background: #004b8a;
   height: 100vh; }
   .valores img {
-    max-width: 400%; }
+    max-width: 100%; }
 
 .historia {
   background-color: #4267af; }
@@ -612,6 +618,13 @@ a:focus {
   background: #569fd2; }
   .esr img {
     max-width: 60%; }
+  .esr img.img-fade-esr {
+    opacity: 0.2;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
 
 .slide-torre-Ccomercial {
   height: 100vh; }
@@ -668,7 +681,14 @@ a:focus {
   background: #004b8a;
   height: 100vh; }
   .estacionamiento img {
-    max-width: 60%; }
+    width: 70%; }
+  .estacionamiento .img-fade-estacionamiento {
+    opacity: 0.2;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
 
 .img-contacto {
   height: 100vh;
