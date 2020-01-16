@@ -1,0 +1,201 @@
+$color-1:#004b8a;
+$color-2:#4267af;
+$color-3:#569fd2;
+
+//Slides
+@mixin slides ($fondo){
+    background: $fondo;
+    background-size: cover;
+    background-position: center;
+}
+
+//Estructura general
+.bg-wtc {
+    background: url("../img/backgroung-wtc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    .contenedor-inicial {
+        min-height: 65vh;
+        background: $color-1;
+    }
+
+    .contenedor-logo {
+        max-height: 15vh;
+    }
+}
+
+//Sección fixed
+.video-fixed {
+    height: 100vh;
+    background: url("../img/fondo-video.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.mision-vision {
+    height: 100vh;
+
+    .mision {
+        background: $color-2;
+        height: 50vh;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .vision {
+        background: $color-3;
+        height: 50vh;
+
+        img {
+            width: 45%;
+        }
+
+        img.img-fade-vision{
+            opacity: 0.2;
+            width: 30%;
+            position: absolute;
+            margin-top: -10px;
+            right: 0;
+        }
+    }
+}
+
+.valores {
+    background: $color-1;
+    height: 100vh;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.historia {
+    background-color: $color-2;
+
+    @mixin line ($margen){
+        border-left: 2px solid #fff;
+        height: 50px;
+        width: 2px;
+        margin-left: $margen;
+    }
+
+    .vl1 {
+        @include line(30%)
+    }
+
+    .vl2 {
+        @include line(50%)
+    }
+}
+
+.esr{
+    background: $color-3;
+    img {
+        max-width: 60%;
+    }
+
+    img.img-fade-esr{
+        opacity: 0.2;
+        width: 20%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.slide-torre-Ccomercial{
+    height: 100vh;
+    .slide{
+        height: 100%;
+
+        .slide-torre1{
+            @include slides(url('../img/centro-comercial.jpg'));
+            height: 100vh;
+        }
+
+        .slide-torre2{
+            @include slides(url('../img/backgroung-wtc.jpg'));
+            height: 100vh;
+        }
+    }
+}
+.torre-Ccomercial{
+    height: 100vh;
+    .torre{
+        height: 50vh;
+        background: $color-1;
+        img {
+            max-width: 60%;
+        }
+    }
+
+    .centro-comercial{
+        height: 50vh;
+        background: $color-2;
+    }
+}
+
+.slide-ciecPepsi{
+    height: 100vh;
+    .slide{
+        height: 100%;
+
+        .slide-ciec1{
+            @include slides(url('../img/pepsi-center.jpg'));
+            height: 100vh;
+        }
+
+        .slide-ciec2{
+            @include slides(url('../img/ciec.jpg'));
+            height: 100vh;
+        }
+    }
+}
+
+.ciec{
+    background: $color-3;
+    height: 100vh;
+}
+
+.img-estacionamiento{
+    height: 100vh;
+        @include slides(url('../img/estacionamiento.jpg'));
+}
+
+.estacionamiento{
+    background: $color-1;
+    height: 100vh;
+    img {
+        width: 70%;
+    }
+
+    .img-fade-estacionamiento{
+        opacity: 0.2;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.img-contacto{
+    height: 100vh;
+        @include slides(url('../img/fondo-video.jpg'));
+}
+
+.contacto{
+    background: $color-2;
+    height: 100vh;
+    i{
+        font-size: 30px;
+    }
+}
+//Termina sección fixed
