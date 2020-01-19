@@ -61,48 +61,6 @@
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
-/* Buttons */
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  pointer-events: auto;
-  color: #333;
-  border: 0;
-  border-radius: 1.85em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.885em;
-  padding: 1em 2em;
-  margin: 0 auto;
-  background: rgba(251, 224, 148, 0.8);
-  -webkit-transition: background 0.3s, opacity 0.3s;
-  transition: background 0.3s, opacity 0.3s; }
-
-.btn:focus {
-  outline: none; }
-
-.btn:hover {
-  background: #fbe094; }
-
-.btn--trigger {
-  width: 15em;
-  position: absolute;
-  bottom: 2em;
-  left: 50%;
-  margin: 0 0 0 -7.5em; }
-
-.btn--hidden {
-  opacity: 0;
-  pointer-events: none; }
-
-/* Links */
-a {
-  text-decoration: none;
-  color: #fbe094;
-  outline: none; }
-
 /* Demo colors */
 .demo-2 .trigger-headline {
   color: #fff; }
@@ -558,7 +516,7 @@ a:focus {
           box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75); }
 
 .bg-wtc {
-  background: url("../img/backgroung-wtc.jpg");
+  background: url("../img/background-wtc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -568,7 +526,21 @@ a:focus {
     min-height: 65vh;
     background: #004b8a; }
   .bg-wtc .contenedor-logo {
-    max-height: 15vh; }
+    max-height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .bg-wtc .contenedor-logo img {
+      max-width: 300px; }
+
+.bg-wtc-fixed {
+  background: url("../img/background-movil-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .video-fixed {
   height: 100vh;
@@ -636,7 +608,7 @@ a:focus {
       background-position: center;
       height: 100vh; }
     .slide-torre-Ccomercial .slide .slide-torre2 {
-      background: url("../img/backgroung-wtc.jpg");
+      background: url("../img/background-wtc.jpg");
       background-size: cover;
       background-position: center;
       height: 100vh; }
@@ -701,6 +673,50 @@ a:focus {
   height: 100vh; }
   .contacto i {
     font-size: 30px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  pointer-events: auto;
+  color: #004b8a;
+  border: 0;
+  border-radius: 1.85em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.885em;
+  padding: 1em 2em;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-transition: 0.3s, opacity 0.7s;
+  transition: 0.3s, opacity 0.7s; }
+
+.btn:focus {
+  outline: none; }
+
+.btn:hover {
+  -webkit-box-shadow: 10px 10px 24px #5C67AD;
+          box-shadow: 10px 10px 24px #5C67AD;
+  color: #004b8a; }
+
+.btn--trigger {
+  width: 15em;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  margin: 0 0 0 -7.5em; }
+
+.btn--hidden {
+  opacity: 0;
+  pointer-events: none; }
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: none; }
 
 main {
   position: relative; }

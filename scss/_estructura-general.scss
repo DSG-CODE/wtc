@@ -11,7 +11,7 @@ $color-3:#569fd2;
 
 //Estructura general
 .bg-wtc {
-    background: url("../img/backgroung-wtc.jpg");
+    background: url("../img/background-wtc.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -25,10 +25,21 @@ $color-3:#569fd2;
 
     .contenedor-logo {
         max-height: 15vh;
+        display: flex;
+        align-items: flex-end;
+        img{
+            max-width:300px;
+        }
     }
 }
 
 //Sección fixed
+.bg-wtc-fixed{
+    background: url("../img/background-movil-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .video-fixed {
     height: 100vh;
     background: url("../img/fondo-video.jpg");
@@ -121,7 +132,7 @@ $color-3:#569fd2;
         }
 
         .slide-torre2{
-            @include slides(url('../img/backgroung-wtc.jpg'));
+            @include slides(url('../img/background-wtc.jpg'));
             height: 100vh;
         }
     }
@@ -199,3 +210,53 @@ $color-3:#569fd2;
     }
 }
 //Termina sección fixed
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	pointer-events: auto;
+	color: #004b8a;
+	border: 0;
+	border-radius: 1.85em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.885em;
+	padding: 1em 2em;
+	margin: 0 auto;
+	background:#fff;
+	transition: 0.3s, opacity 0.7s;
+
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	box-shadow: 10px 10px 24px #5C67AD;
+	color: #004b8a;
+}
+
+.btn--trigger {
+	width: 15em;
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	margin: 0 0 0 -7.5em;
+}
+
+.btn--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Links */
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
