@@ -777,6 +777,30 @@ body {
   body h2 {
     font-weight: 600; }
 
+.pages-generals {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #004B8A; }
+  .pages-generals h1 {
+    font-weight: 700;
+    font-size: 35px; }
+  .pages-generals h2 {
+    font-weight: 400;
+    font-size: 20px; }
+  .pages-generals h5 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #545661; }
+  .pages-generals p {
+    color: #545661;
+    font-weight: 400; }
+  .pages-generals a {
+    text-decoration: none;
+    color: #004B8A; }
+  .pages-generals .hline {
+    border-bottom: 4px solid #004B8A;
+    width: 35px; }
+
 .video-fixed {
   height: 167.1vh;
   margin: 0;
