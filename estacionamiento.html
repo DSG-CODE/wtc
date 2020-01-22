@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WTC - Estacionamiento</title>
-	<meta name="description" content="Más de 3,000 cajones de estacionamiento en la modalidad de autoservicio, distribuidos en 5 niveles subterráneos del World Trade Center México" />
+	<meta name="description"
+		content="Más de 3,000 cajones de estacionamiento en la modalidad de autoservicio, distribuidos en 5 niveles subterráneos del World Trade Center México" />
 	<meta name="keywords" content=" Torre del World Trade Center Ciudad de México, Pepsi Center " />
 	<meta name="author" content="Codrops" />
 	<link rel="shortcut icon" href="favicon-wtc.png">
@@ -29,43 +30,90 @@
 
 <body class="pages-generals">
 
-	<!-- Menú -->
-	<div class="menu d-none d-lg-block">
-		<nav class="d-flex flex-row  align-items-center py-3 shadow-lg">
-			<div class="d-flex align-items-center pl-4">
-				<img src="img/logo-wtc-menu.png" height="200px" alt="">
-			</div>
-			<ul class="fa-ul">
-				<li><a href="index.html#inicio"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>INICIO</a></li>
+	<!-- Menú Desktop-->
+	<div class="menu shadow-lg">
+		<div class="container d-none d-lg-block">
+			<nav class="d-flex flex-row  align-items-center py-3 shadow-lg">
+				<div class="d-flex align-items-center pl-4">
+					<img src="img/logo-wtc-menu.png" height="200px" alt="">
+				</div>
+				<ul class="fa-ul">
+					<li><a href="#inicio" class="activo"><span class="fa-li"><i
+									class="fas fa-window-minimize"></i></span>INICIO</a></li>
 
-				<li>
-					<a href="#" class="activo" data-toggle="collapse" data-target="#menu-complejo"
-						aria-expanded="false">
-						<span class="fa-li"><i class="fas fa-window-minimize"></i></span>COMPLEJO
-					</a>
-					<div class="collapse" id="menu-complejo">
-						<div class="my-3">
-							<ul class="fa-ul">
-								<li><a href="index.html#torre"><span class="fa-li"><i
-												class="fas fa-window-minimize"></i></span>Torre y Centro comercial</a>
-								</li>
-								<li><a href="index.html#ciec"><span class="fa-li"><i
-												class="fas fa-window-minimize"></i></span>Ciec y Pepsi Center</a></li>
-								<li><a href="index.html#estacionamiento"><span class="fa-li"><i
-												class="fas fa-window-minimize"></i></span>Estacionamiento</a></li>
-							</ul>
+					<li>
+						<a href="#" data-toggle="collapse" data-target="#menu-complejo" aria-expanded="false">
+							<span class="fa-li"><i class="fas fa-window-minimize"></i></span>COMPLEJO
+						</a>
+						<div class="collapse" id="menu-complejo">
+							<div class="my-3">
+								<ul class="fa-ul">
+									<li><a href="#torre"><span class="fa-li"><i
+													class="fas fa-window-minimize"></i></span>Torre y Centro
+											comercial</a>
+									</li>
+									<li><a href="#ciec"><span class="fa-li"><i
+													class="fas fa-window-minimize"></i></span>Ciec y Pepsi Center</a>
+									</li>
+									<li><a href="#estacionamiento"><span class="fa-li"><i
+													class="fas fa-window-minimize"></i></span>Estacionamiento</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</li>
+					</li>
 
-				<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>DIRECTORIO</a></li>
-				<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>ESPACIOS</a> </li>
-				<li><a href="index.html#contacto"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>CONTACTO </a>
-				</li>
-			</ul>
-		</nav>
+					<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>DIRECTORIO</a></li>
+					<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>ESPACIOS</a> </li>
+					<li><a href="#contacto"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>CONTACTO
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 	<!-- Termina Menú -->
+
+	<!-- Menú Responsive -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary d-block d-lg-none sticky-top shadow-lg">
+		<div class="container">
+			<a class="navbar-brand font-weight-bold" href="index.html">WTC</a>
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html#inicio">INICIO <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							COMPLEJO
+						</a>
+						<div class="dropdown-menu bg-primary border-0" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item bg-primary text-white" href="index.html#torre">Torre y Centro Comercial</a>
+							<a class="dropdown-item bg-primary text-white" href="index.html#ciec">Ciec y Pepsi Center</a>
+							<a class="dropdown-item bg-primary text-white" href="index.html#estacionamiento">Estacionamiento</a>
+						</div>
+					<li class="nav-item">
+						<a class="nav-link" href="#">DIRECTORIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ESPACIOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#contacto">CONTACTO</a>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+	<!-- Termina Menú Responsive -->
 
 	<!-- Contenido General Main -->
 	<main class="container-fluid pb-5">
@@ -194,6 +242,7 @@
 		});
 	</script>
 
+	<!-- Efectos Scroll - AOS -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
@@ -201,6 +250,7 @@
 			duration: 1500,
 		});
 	</script>
+	<!-- Efectos Scroll - AOS-->
 
 </body>
 

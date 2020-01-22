@@ -515,6 +515,9 @@ a:focus {
   -webkit-box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75);
           box-shadow: 2px 20px 35px rgba(25, 23, 20, 0.75); }
 
+.bg-primary {
+  background-color: #004b8a !important; }
+
 .bg-wtc {
   background: url("../img/background-wtc.jpg");
   background-repeat: no-repeat;
