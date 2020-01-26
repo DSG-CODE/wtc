@@ -40,7 +40,7 @@
 				<ul class="fa-ul">
 					<li><a href="#inicio" class="activo"><span class="fa-li"><i
 									class="fas fa-window-minimize"></i></span>INICIO</a></li>
-	
+
 					<li>
 						<a href="#" data-toggle="collapse" data-target="#menu-complejo" aria-expanded="false">
 							<span class="fa-li"><i class="fas fa-window-minimize"></i></span>COMPLEJO
@@ -49,20 +49,23 @@
 							<div class="my-3">
 								<ul class="fa-ul">
 									<li><a href="#torre"><span class="fa-li"><i
-													class="fas fa-window-minimize"></i></span>Torre y Centro comercial</a>
+													class="fas fa-window-minimize"></i></span>Torre y Centro
+											comercial</a>
 									</li>
 									<li><a href="#ciec"><span class="fa-li"><i
-													class="fas fa-window-minimize"></i></span>Ciec y Pepsi Center</a></li>
+													class="fas fa-window-minimize"></i></span>Ciec y Pepsi Center</a>
+									</li>
 									<li><a href="#estacionamiento"><span class="fa-li"><i
 													class="fas fa-window-minimize"></i></span>Estacionamiento</a></li>
 								</ul>
 							</div>
 						</div>
 					</li>
-	
+
 					<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>DIRECTORIO</a></li>
 					<li><a href="#"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>ESPACIOS</a> </li>
-					<li><a href="#contacto"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>CONTACTO </a>
+					<li><a href="#contacto"><span class="fa-li"><i class="fas fa-window-minimize"></i></span>CONTACTO
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -112,10 +115,25 @@
 	</nav>
 	<!-- Termina Menú Responsive -->
 
-	<!-- Efecto Intro -->
-	<header class="container-fluid">
+	<!-- Efecto Intro Video Desktop-->
+	<header class="v-header container d-lg-block d-none">
+		<div class="fullscreen-video-wrap">
+		  <video src="video/intro-wtc.mp4" autoplay muted loop>
+		</video>
+		</div>
+		<div class="header-overlay"></div>
+			<h2 class="trigger-headline trigger-headline--hidden"><span>W</span><span>T</span><span>C</span></h2>
+			<div class="bottom-nav d-flex justify-content-center pb-4">
+				<button class="btn btn--trigger d-none">Inicio</button>
+				<a href="#inicio" class="bounce-scroll"><img src="img/ico-scroll.svg" width="30px" alt=""></a>
+			</div>
+	  </header>
+	<!-- Termina Intro Video Desktop -->
+
+	<!-- Efecto Intro Móvil-->
+	<header class="container-fluid d-lg-none d-block">
 		<div class="row">
-			<div class="segmenter" style="background-image: url(img/2.jpg)"></div>
+			<div class="segmenter" style="background-image: url(img/WTC-Mexico-movil.jpg)"></div>
 			<h2 class="trigger-headline trigger-headline--hidden"><span>W</span><span>T</span><span>C</span></h2>
 			<div class="bottom-nav d-flex justify-content-center pb-4">
 				<button class="btn btn--trigger d-none">Inicio</button>
@@ -176,7 +194,7 @@
 			<!-- Video Fixed -->
 			<div class="col-6 d-none d-lg-block video-fixed sticky-top">
 				<video class="video-background" autoplay muted loop>
-					<source src="video/backgroun-wtc-vertical.mp4" type="video/mp4">
+					<source src="video/WTC_VERT.mp4" type="video/mp4">
 				</video>
 			</div>
 			<!-- Termina Video Fixed -->
@@ -192,9 +210,7 @@
 						</div>
 						<div class="col-10 col-md-8 col-lg-7  d-flex align-items-center wow fadeIn pt-5"
 							data-wow-duration="2s" data-wow-delay=".4s">
-							<p>Mantenerse como un ícono de la Ciudad y proveer servicios de calidad que generen valor a
-								nuestros condóminos, clientes, proveedores, visitantes y personal, considerando las
-								mejores prácticas en responsabilidad social, ambiental y económica.</p>
+							<p>Mantenerse como un ícono de la Ciudad<br /> y proveer servicios de calidad que generen valor a nuestros condóminos, clientes, proveedores, visitantes y personal, considerando las mejores prácticas en responsabilidad social, ambiental y económica.</p>
 						</div>
 					</div>
 					<!-- Termina Misión -->
@@ -240,120 +256,183 @@
 				<!-- Termina: Valores -->
 
 				<!-- Historia -->
-				<section class="row historia align-items-center">
-					<div class="col-2 d-flex align-items-center sticky-top">
-						<img src="img/historia.svg" class="w-100" data-aos="fade-down" alt="Valores WTC">
+				<section class="row historia align-items-center justify-content-center">
+					<div class="col-11 d-flex flex-column py-5 my-5">
+						<div class="row justify-content-center">
+							<img src="img/historia2.svg"  width="70%" data-aos="fade-down" alt="Historia WTC">
+						</div>
+						<div class="row justify-content-end">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" data-aos="fade-up" aria-controls="collapseOne">
+								<i class="fa"></i>
+							</button>
+						</div>	
 					</div>
-					<div class="col-9 col-lg-7">
-						<h2 class="pt-5 mt-5 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">1947</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".6s">Se lotifica la Colonia
-							Nápoles.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1966</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Don Manuel Suárez
-							y Suárez comienza la edificación del Hotel de México.</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+					<div class="col-lg-10 col-12">
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+							<div class="container historia-wtc">
+								<div class="row text-center flex-nowrap overflow-auto">
 
-						<h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1967</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Taro Okamoto realiza un
-							mural en el vestíbulo que muestra las terribles consecuencias de la
-							detonación atómica. En 2008 la obra se trasladó al metro de Tokio, Japón.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-8 text-left">
+									<h2>1947</h2>
+									<p>Se lotifica la Colonia Nápoles.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1968</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Inspirado por los
-							Los Juegos Olímpicos, Don Manuel Suárez crea el Proyecto
-							México 2000, una magnífica obra que reuniría 11 espacios, entre ellos: la Torre Principal
-							(Hotel de México), Polyforum, un Centro Comercial y Auditorios de ferias y convenciones,
-							entre otros.</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
 
-						<h2 class="wow fadeIn wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1970</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Don Manuel Suárez invita a
-							David Alfaro Siqueiros para la realización de un mural: La Marcha
-							de la Humanidad, que hoy se alberga en el Polyforum Cultural Siqueiros y es considerado el
-							mural más grande del mundo.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-9 text-left pb-5">
+									<h2>1966</h2>
+									<p>Don Manuel Suárez y Suárez comienza la edificación del Hotel de México.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1972</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Finaliza la
-							construcción de la Torre Principal. Nunca funcionó como hotel.
-						</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
 
-						<h2 class="wow fadeIn wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1980</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">The Police da un concierto
-							en la corona de la Torre.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-9 text-left pb-5">
+									<h2>1967</h2>
+									<p>Taro Okamoto realiza un mural en el vestíbulo que muestra las terribles consecuencias de la detonación atómica. En 2008 la obra se trasladó al metro de Tokio, Japón.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1980</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Se replantea el
-							proyecto y se planea convertir al Hotel de México en un Centro Internacional de Negocios.
-						</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
 
-						<h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1992</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Inicia la remodelación del
-							Hotel de México para convertir al complejo en lo que hoy conocemos como World Trade Center.
-						</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-9 text-left pb-5">
+									<h2>1968</h2>
+									<p>Inspirado por los Los Juegos Olímpicos, Don Manuel Suárez crea el Proyecto
+										México 2000, una magnífica obra que reuniría 11 espacios, entre ellos: la Torre Principal
+										(Hotel de México), Polyforum, un Centro Comercial y Auditorios de ferias y convenciones,
+										entre otros.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1994</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">El 18 de
-							noviembre de este año, finalmente se inauguró el Centro de
-							Negocios más importante del país: el WTC Ciudad de México.</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
 
-						<h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">1995</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">Se inaugura el Centro
-							Internacional Exposiciones y Convenciones.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-9 text-left pb-5">
+									<h2>1970</h2>
+									<p>Don Manuel Suárez invita a David Alfaro Siqueiros para la realización de un mural: La Marcha de la Humanidad, que hoy se alberga en el Polyforum Cultural Siqueiros y es considerado el mural más grande del mundo.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">2011</h2>
-						<p class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">El Centro de
-							Convenciones y Exposiciones incursiona en el mercado global de congresos, convenciones y
-							eventos.</p>
-						<div class="vl2 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
 
-						<h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">2018</h2>
-						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">El Complejo WTC gana la
-							certificación ESR por 12 años consecutivos.</p>
-						<div class="vl1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".8s"></div>
+								  <div class="col-9 text-left pb-5">
+									<h2>1972</h2>
+									<p>Finaliza la construcción de la Torre Principal. Nunca funcionó como hotel.</p>
+								  </div>
 
-						<h2 class="text-right wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">2019</h2>
-						<p class="text-right pb-5 mb-5 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">El WTC
-							celebra 25 años con la emisión de un billete de Lotería Nacional.</p>
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>1980</h2>
+									<p>The Police da un concierto en la corona de la Torre.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>1980</h2>
+									<p>Se replantea el proyecto y se planea convertir al Hotel de México en un Centro Internacional de Negocios.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>1992</h2>
+									<p>Inicia la remodelación del Hotel de México para convertir al complejo en lo que hoy conocemos como World Trade Center.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>1994</h2>
+									<p>El 18 de noviembre de este año, finalmente se inauguró el Centro de
+										Negocios más importante del país: el WTC Ciudad de México.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>1995</h2 >
+									<p>Se inaugura el Centro Internacional Exposiciones y Convenciones.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>2011</h2>
+									<p>El Centro de Convenciones y Exposiciones incursiona en el mercado global de congresos, convenciones y eventos.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>2018</h2>
+									<p>El Complejo WTC gana la certificación ESR por 12 años consecutivos.</p>
+								  </div>
+
+								  <div class="col-lg-3 col-md-2 col-5">
+									<div class="linea"></div>
+								  </div>
+
+								  <div class="col-9 text-left pb-5">
+									<h2>2019</h2>
+									<p>El WTC celebra 25 años con la emisión de un billete de Lotería Nacional.</p>
+								  </div>
+
+								</div>
+							  </div>
+						</div>
+
 					</div>
 				</section>
 				<!-- Termina: Historia -->
 
 				<!-- ESR -->
-				<section class="row esr align-items-center">
-					<div class="col-2 d-flex align-items-center sticky-top">
-						<img src="img/esr.svg" data-aos="fade-up" alt="Valores WTC">
+				<section class="row esr justify-content-center">
+
+					<div class="col-11 d-flex flex-column mt-5 pt-5 mb-5">
+						<div class="row justify-content-center" data-aos="fade-up">
+							<img src="img/esr2.svg"  width="45%" alt="Historia WTC">
+						</div>
+						<div class="row justify-content-end">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"  aria-controls="collapseTwo" data-aos="fade-down"> <i class="fa"></i>
+							</button>
+						</div>	
 					</div>
-					<div class="col-9 col-lg-8 d-flex align-items-center">
-
-						<p class="py-5 my-2 my-lg-0 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">En el WTC
-							CDMX estamos comprometidos con influir positivamente en nuestro
-							entorno, convencidos de que el desarrollo social es generador del desarrollo económico.
-							<br /><br />
-							Para nosotros la Responsabilidad Social Empresarial se manifiesta con una visión de negocio
-							que considere y procure mejorar la calidad de vida de colaboradores, clientes y condóminos,
-							al promover valores y acciones tales como preocuparnos por el cuidado del medio ambiente y
-							los recursos naturales y fortalecer la colaboración y el cumplimiento con las
-							autoridades.<br /><br />
-							Comenzamos el camino hacia la Responsabilidad Social Empresarial evaluando nuestras
-							prácticas ante el Centro Mexicano para la Filantropía (CEMEFI) desde hace 11
-							años.<br /><br />
-							Nuestro objetivo es fortalecer la vinculación con el medio ambiente y la relación con
-							lascomunidades externas.
-						</p>
-
+					
+					<div class="col-8 pb-5">
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+							<p>En el WTC CDMX estamos comprometidos con influir positivamente en nuestro
+								entorno, convencidos de que el desarrollo social es generador del desarrollo económico.
+								<br /><br />
+								Para nosotros la Responsabilidad Social Empresarial se manifiesta con una visión de negocio que considere y procure mejorar la calidad de vida de colaboradores, clientes y condóminos, al promover valores y acciones tales como preocuparnos por el cuidado del medio ambiente y los recursos naturales y fortalecer la colaboración y el cumplimiento con las autoridades.<br /><br />
+								Comenzamos el camino hacia la Responsabilidad Social Empresarial evaluando nuestras
+								prácticas ante el Centro Mexicano para la Filantropía (CEMEFI) desde hace 11 años.<br /><br />
+								Nuestro objetivo es fortalecer la vinculación con el medio ambiente y la relación con lascomunidades externas.
+							</p >
+							<img src="img/esr.svg" class="img-fade-esr" alt="">
+						</div>
 					</div>
-
-					<img src="img/esr.svg" class="img-fade-esr" alt="">
 				</section>
 				<!-- Termina: ESR -->
 
@@ -413,9 +492,9 @@
 
 					<!-- Centro Comercial -->
 					<div class="row centro-comercial justify-content-center align-content-center">
-						<!-- <img src="img/centro-comercial.svg" class="w-100 py-5" alt="" data-aos="fade-right"> -->
+						<img src="img/centro-comercial.svg" class="w-100 py-5" alt="" data-aos="fade-right">
 						<div class="col-10 col-lg-8 pt-0">
-							<img src="img/centro-comercial.svg" class="w-100 py-5" alt="" data-aos="fade-right">
+							<!-- <img src="img/centro-comercial.svg" class="w-100 py-5" alt="" data-aos="fade-right"> -->
 							<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".8s">Ser la plataforma de
 								negocios y servicios globales referente de la Ciudad de México,
 								elegida por las mejores empresas y sus colaboradores.</p>
@@ -460,9 +539,9 @@
 			<!-- Contenido Ciec -->
 			<div class="col-12 col-lg-6">
 				<section class="row ciec align-content-center justify-content-center">
-					<!-- <img src="img/ciec.svg" class="w-100"  data-aos="zoom-in-up" alt=""> -->
+					<img src="img/ciec.svg" class="w-100"  data-aos="zoom-in-up" alt="">
 					<div class="col-10 col-lg-8 pt-lg-2">
-						<img src="img/ciec.svg" class="w-100 py-3" data-aos="zoom-in-up" alt="">
+						<!-- <img src="img/ciec.svg" class="w-100 py-3" data-aos="zoom-in-up" alt=""> -->
 						<p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">El Centro Internacional de
 							Exposiciones y Convenciones WTC y el Pepsi Center WTC
 							representan una oferta inigualable para albergar cualquier tipo de evento debido a su diseño

@@ -184,7 +184,8 @@ a:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 11; }
 
 /* Demo links */
 .codrops-demos {
@@ -314,7 +315,8 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0; }
+  margin: 0;
+  z-index: 11; }
 
 .trigger-headline span {
   display: inline-block;
@@ -518,6 +520,43 @@ a:focus {
 .bg-primary {
   background-color: #004b8a !important; }
 
+.v-header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff; }
+  .v-header .container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center; }
+  .v-header .fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; }
+  .v-header .fullscreen-video-wrap video {
+    min-height: 100%;
+    min-width: 100%; }
+  .v-header .header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 11;
+    background: #004b8a;
+    opacity: 0.55; }
+  .v-header .header-content {
+    z-index: 222; }
+
 .bg-wtc {
   background: url("../img/background-wtc.jpg");
   background-repeat: no-repeat;
@@ -547,9 +586,11 @@ a:focus {
 
 .video-fixed {
   height: 100vh;
+  width: 100%;
   background: url("../img/fondo-video.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 .mision-vision {
   height: 100vh; }
@@ -577,20 +618,42 @@ a:focus {
     max-width: 100%; }
 
 .historia {
-  background-color: #4267af; }
-  .historia .vl1 {
-    border-left: 2px solid #fff;
-    height: 50px;
-    width: 2px;
-    margin-left: 30%; }
-  .historia .vl2 {
-    border-left: 2px solid #fff;
-    height: 50px;
-    width: 2px;
-    margin-left: 50%; }
+  background-color: #4267af;
+  padding: 40px; }
+  .historia .btn-link {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .historia .btn-link:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .historia [data-toggle="collapse"] .fa:before {
+    color: white;
+    content: "\f077"; }
+  .historia [data-toggle="collapse"].collapsed .fa:before {
+    color: white;
+    content: "\f078"; }
+  .historia .linea {
+    border-bottom: white solid 2px;
+    width: 70%;
+    position: absolute;
+    top: 20%; }
 
 .esr {
   background: #569fd2; }
+  .esr .btn-link {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .esr .btn-link:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .esr [data-toggle="collapse"] .fa:before {
+    color: white;
+    content: "\f077"; }
+  .esr [data-toggle="collapse"].collapsed .fa:before {
+    color: white;
+    content: "\f078"; }
   .esr img {
     max-width: 60%; }
   .esr img.img-fade-esr {
@@ -603,18 +666,16 @@ a:focus {
 
 .slide-torre-Ccomercial {
   height: 100vh; }
-  .slide-torre-Ccomercial .slide {
-    height: 100%; }
-    .slide-torre-Ccomercial .slide .slide-torre1 {
-      background: url("../img/centro-comercial.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 100vh; }
-    .slide-torre-Ccomercial .slide .slide-torre2 {
-      background: url("../img/background-wtc.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 100vh; }
+  .slide-torre-Ccomercial .slide .slide-torre1 {
+    background: url("../img/centro-comercial.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; }
+  .slide-torre-Ccomercial .slide .slide-torre2 {
+    background: url("../img/background-wtc.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; }
 
 .torre-Ccomercial {
   height: 100vh; }
@@ -700,8 +761,8 @@ a:focus {
   outline: none; }
 
 .btn:hover {
-  -webkit-box-shadow: 10px 10px 24px #5C67AD;
-          box-shadow: 10px 10px 24px #5C67AD;
+  -webkit-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.479);
+          box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.479);
   color: #004b8a; }
 
 .btn--trigger {
