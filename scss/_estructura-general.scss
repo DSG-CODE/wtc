@@ -2,11 +2,84 @@ $color-1:#004b8a;
 $color-2:#4267af;
 $color-3:#569fd2;
 
+// Sobreescribiendo estilos de Bootstrap
+.bg-primary{
+    background-color: $color-1!important;
+}
+
+//Botones Desplegables Toggle Historia y ESR
+@mixin btn-link {
+    .btn-link {
+        background: none;
+        box-shadow: none;
+      }
+      
+      .btn-link:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+      }
+      
+      [data-toggle="collapse"] .fa:before {  
+          color: white; 
+        content: "\f077";
+      }
+      
+      [data-toggle="collapse"].collapsed .fa:before {
+          color: white;
+        content: "\f078";
+      }  
+}
+
 //Slides
 @mixin slides ($fondo){
     background: $fondo;
     background-size: cover;
     background-position: center;
+}
+
+// Intro Video Full
+.v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    .container{
+        max-width:960px;
+        padding-left:1rem;
+        padding-right:1rem;
+        margin:auto;
+        text-align:center;
+      }
+      
+      .fullscreen-video-wrap{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        overflow:hidden;
+      }
+      
+      .fullscreen-video-wrap video{
+        min-height:100%;
+        min-width:100%;
+      }
+      
+      .header-overlay{
+        height:100vh;
+        position: absolute;
+        top:0;
+        left:0;
+        width:100vw;
+        z-index:11;
+        background:$color-1;
+        opacity:0.55;
+      }
+      
+      .header-content{
+        z-index:222;
+      } 
+      
 }
 
 //Estructura general
@@ -40,11 +113,14 @@ $color-3:#569fd2;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .video-fixed {
     height: 100vh;
+    width: 100%;
     background: url("../img/fondo-video.jpg");
     background-position: center;
     background-size: cover;
+    overflow:hidden;
 }
 
 .mision-vision {
@@ -88,25 +164,20 @@ $color-3:#569fd2;
 
 .historia {
     background-color: $color-2;
+    @include btn-link();
+    padding: 40px;
 
-    @mixin line ($margen){
-        border-left: 2px solid #fff;
-        height: 50px;
-        width: 2px;
-        margin-left: $margen;
-    }
-
-    .vl1 {
-        @include line(30%)
-    }
-
-    .vl2 {
-        @include line(50%)
+    .linea{
+        border-bottom: white solid 2px;
+        width: 70%;
+        position: absolute;
+        top:20%;
     }
 }
 
 .esr{
     background: $color-3;
+    @include btn-link();
     img {
         max-width: 60%;
     }
@@ -124,8 +195,6 @@ $color-3:#569fd2;
 .slide-torre-Ccomercial{
     height: 100vh;
     .slide{
-        height: 100%;
-
         .slide-torre1{
             @include slides(url('../img/centro-comercial.jpg'));
             height: 100vh;
@@ -211,7 +280,7 @@ $color-3:#569fd2;
 }
 //Termina sección fixed
 
-/* Buttons */
+/* Botones Index */
 .btn {
 	display: inline-block;
 	cursor: pointer;
@@ -236,7 +305,7 @@ $color-3:#569fd2;
 }
 
 .btn:hover {
-	box-shadow: 10px 10px 24px #5C67AD;
+	box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.479);
 	color: #004b8a;
 }
 
@@ -260,3 +329,5 @@ a {
 	color: #fff;
 	outline: none;
 }
+
+
